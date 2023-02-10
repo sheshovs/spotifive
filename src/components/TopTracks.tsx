@@ -26,12 +26,7 @@ const TopTracks = React.forwardRef(({ tracks }: TopTracksProps, ref) => {
 				ref={ref}
 				id="top-10"
 				sx={{
-					width:
-						width <= breakpoints.sm
-							? `100%`
-							: width <= breakpoints.md
-							? `90%`
-							: `50%`,
+					width: width <= breakpoints.md ? `90%` : `50%`,
 					padding: `10px`,
 					display: `flex`,
 					flexDirection: `column`,
