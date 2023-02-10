@@ -70,7 +70,7 @@ const Home = () => {
 			.then(function (dataUrl: string) {
 				const link = document.createElement(`a`);
 				link.href = dataUrl;
-				link.download = `Spotifive.jpeg`;
+				link.download = `Spotifive`;
 				link.click();
 			})
 			.catch(function (error: any) {
@@ -106,6 +106,7 @@ const Home = () => {
 					flexDirection: `column`,
 					marginTop: `0px`,
 					overflowX: "hidden",
+					backgroundColor: "#242424",
 				}}
 			>
 				{user && (
