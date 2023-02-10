@@ -63,17 +63,24 @@ const Home = () => {
 	const container = useRef(null);
 
 	function exportToJPEG(dom: any) {
+		const box = document.getElementById("#top-10");
+		if (box != null) {
+			box.style.padding = "30px 30px 80px 30px";
+		}
 		domtoimage
 			.toPng(dom)
 			.then(function (dataUrl: string) {
 				const link = document.createElement(`a`);
 				link.href = dataUrl;
-				link.download = `image.jpeg`;
+				link.download = `Spotifive.jpeg`;
 				link.click();
 			})
 			.catch(function (error: any) {
 				console.error(`oops, something went wrong!`, error);
 			});
+		if (box != null) {
+			box.style.padding = "20px 20px 50px 20px";
+		}
 	}
 
 	return (

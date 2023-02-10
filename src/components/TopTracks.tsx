@@ -27,7 +27,7 @@ const TopTracks = React.forwardRef(({ tracks }: TopTracksProps, ref) => {
 				id="top-10"
 				sx={{
 					width: width <= breakpoints.md ? `90%` : `50%`,
-					padding: `20px 30px 50px 20px`,
+					padding: `20px 20px 50px 20px`,
 					display: `flex`,
 					flexDirection: `column`,
 					alignItems: `center`,
@@ -38,7 +38,8 @@ const TopTracks = React.forwardRef(({ tracks }: TopTracksProps, ref) => {
 					variant="h4"
 					align="center"
 					sx={{
-						marginY: `10px`,
+						marginTop: `10px`,
+						marginBottom: "20px",
 						color: `#fff`,
 						fontFamily: `Gotham-Bold`,
 						fontWeight: 400,
