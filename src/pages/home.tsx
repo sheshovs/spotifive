@@ -13,6 +13,8 @@ import { useQuery } from "react-query";
 import { API } from "../common/api";
 import TopTracks from "../components/TopTracks";
 import { Link, useLocation } from "react-router-dom";
+import "./../assets/fonts/Gotham-Bold.otf";
+import "./../assets/fonts/Gotham-Light.otf";
 
 // import { Save, Print, Share, PaletteRounded } from '@mui/icons-material'
 
@@ -63,10 +65,6 @@ const Home = () => {
 	const container = useRef(null);
 
 	function exportToJPEG(dom: any) {
-		const box = document.getElementById("#top-10");
-		if (box != null) {
-			box.style.padding = "30px 30px 80px 30px";
-		}
 		domtoimage
 			.toPng(dom)
 			.then(function (dataUrl: string) {
@@ -78,9 +76,6 @@ const Home = () => {
 			.catch(function (error: any) {
 				console.error(`oops, something went wrong!`, error);
 			});
-		if (box != null) {
-			box.style.padding = "20px 20px 50px 20px";
-		}
 	}
 
 	return (
@@ -148,7 +143,9 @@ const Home = () => {
 						marginBottom: `10px`,
 						zIndex: 1,
 					}}
-					onClick={() => exportToJPEG(container.current)}
+					onClick={() => {
+						exportToJPEG(container.current);
+					}}
 				>
 					Download
 				</Button>

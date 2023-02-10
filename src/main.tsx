@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "./App";
 import "./index.css";
-import "./assets/fonts/Gotham-Bold.otf";
-import "./assets/fonts/Gotham-Light.otf";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import { QueryClient, QueryClientProvider } from "react-query";

@@ -32,6 +32,7 @@ const TopTracks = React.forwardRef(({ tracks }: TopTracksProps, ref) => {
 					flexDirection: `column`,
 					alignItems: `center`,
 					zIndex: -1,
+					backgroundColor: "#242424",
 				}}
 			>
 				<Typography
