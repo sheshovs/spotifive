@@ -27,12 +27,11 @@ const TopTracks = React.forwardRef(({ tracks }: TopTracksProps, ref) => {
 				id="top-10"
 				sx={{
 					width: width <= breakpoints.md ? `90%` : `50%`,
-					padding: `10px`,
+					padding: `20px 30px 50px 20px`,
 					display: `flex`,
 					flexDirection: `column`,
 					alignItems: `center`,
 					zIndex: -1,
-					marginBottom: `20px`,
 				}}
 			>
 				<Typography

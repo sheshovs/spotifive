@@ -103,6 +103,7 @@ const Home = () => {
 					alignItems: `center`,
 					flexDirection: `column`,
 					marginTop: `0px`,
+					overflowX: "hidden",
 				}}
 			>
 				{user && (
