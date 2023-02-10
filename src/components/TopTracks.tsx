@@ -31,7 +31,6 @@ const TopTracks = React.forwardRef(({ tracks }: TopTracksProps, ref) => {
 					display: `flex`,
 					flexDirection: `column`,
 					alignItems: `center`,
-					zIndex: -1,
 					backgroundColor: "#242424",
 				}}
 			>
