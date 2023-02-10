@@ -65,8 +65,21 @@ const Home = () => {
 	const container = useRef(null);
 
 	function exportToJPEG(dom: any) {
+		const scale = 3;
+		const style = {
+			transform: "scale(" + scale + ")",
+			transformOrigin: "top left",
+			width: dom.offsetWidth + "px",
+			height: dom.offsetHeight + "px",
+		};
+		const param = {
+			height: dom.offsetHeight * scale,
+			width: (dom.offsetWidth + 45) * scale,
+			quality: 1,
+			style,
+		};
 		domtoimage
-			.toPng(dom)
+			.toPng(dom, param)
 			.then(function (dataUrl: string) {
 				const link = document.createElement(`a`);
 				link.href = dataUrl;
