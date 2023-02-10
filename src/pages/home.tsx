@@ -74,7 +74,7 @@ const Home = () => {
 		};
 		const param = {
 			height: dom.offsetHeight * scale,
-			width: (dom.offsetWidth + 45) * scale,
+			width: (dom.offsetWidth + 40) * scale,
 			quality: 1,
 			style,
 		};
