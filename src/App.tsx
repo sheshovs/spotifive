@@ -10,7 +10,6 @@ export const App = (): JSX.Element => {
 				height: `100vh`,
 				justifyContent: `center`,
 				alignItems: `center`,
-				backgroundColor: "#242424",
 			}}
 		>
 			<Button
